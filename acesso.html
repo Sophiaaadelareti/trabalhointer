@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PratoFeito | Cadastro e login</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="acesso">
+  <div id="cabecalho"></div>
+  <main class="container pagina-formulario">
+    <div class="introducao-pagina"><span class="etiqueta">Bem-vindo à PratoFeito</span><h1>Entre ou crie sua conta</h1><p>Com uma conta, você pode fazer pedidos e acompanhar suas entregas.</p></div>
+    <div class="duas-colunas">
+      <section class="cartao-formulario">
+        <h2>Já tenho cadastro</h2>
+        <form id="form-login">
+          <label for="login-email">E-mail</label>
+          <input id="login-email" name="email" type="email" maxlength="100" autocomplete="email" required>
+          <label for="login-senha">Senha</label>
+          <input id="login-senha" name="senha" type="password" maxlength="40" autocomplete="current-password" required>
+          <button class="botao largura-total" type="submit">Entrar</button>
+          <p class="mensagem-formulario" id="mensagem-login" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="cartao-formulario">
+        <h2>Quero me cadastrar</h2>
+        <form id="form-cadastro">
+          <label for="cad-nome">Nome completo</label>
+          <input id="cad-nome" name="nome" type="text" maxlength="80" autocomplete="name" required>
+          <label for="cad-email">E-mail</label>
+          <input id="cad-email" name="email" type="email" maxlength="100" autocomplete="email" required>
+          <label for="cad-telefone">Telefone</label>
+          <input id="cad-telefone" name="telefone" type="tel" inputmode="numeric" maxlength="15" placeholder="(31) 99999-9999" autocomplete="tel" data-mascara="telefone" required>
+          <label for="cad-cep">CEP</label>
+          <input id="cad-cep" name="cep" type="text" inputmode="numeric" maxlength="9" placeholder="00000-000" data-mascara="cep" required>
+          <label for="cad-endereco">Rua e número</label>
+          <input id="cad-endereco" name="endereco" type="text" maxlength="120" autocomplete="street-address" required>
+          <label for="cad-bairro">Bairro</label>
+          <input id="cad-bairro" name="bairro" type="text" maxlength="60" required>
+          <label for="cad-senha">Crie uma senha</label>
+          <input id="cad-senha" name="senha" type="password" minlength="6" maxlength="40" autocomplete="new-password" required>
+          <button class="botao largura-total" type="submit">Criar conta</button>
+          <p class="mensagem-formulario" id="mensagem-cadastro" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+    <p class="aviso-demo">Demonstração acadêmica: os dados ficam salvos neste navegador. Para uso real, será necessário conectar o site a uma aplicação C# e a um banco de dados.</p>
+  </main>
+  <div id="rodape"></div>
+</body>
+</html>

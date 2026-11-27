@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PratoFeito | Cestas básicas</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="produtos">
+  <div id="cabecalho"></div>
+  <main class="container secao">
+    <div class="introducao-pagina"><span class="etiqueta">Nossas opções</span><h1>Cestas básicas</h1><p>Encontre a opção que combina com as necessidades da sua casa.</p></div>
+    <div class="barra-pesquisa">
+      <label class="sr-only" for="pesquisa-produtos">Buscar cesta</label>
+      <input id="pesquisa-produtos" type="search" maxlength="60" placeholder="Buscar cesta pelo nome...">
+      <select id="filtro-categoria" aria-label="Filtrar por categoria">
+        <option value="todas">Todas as cestas</option><option value="essencial">Essencial</option><option value="familia">Família</option><option value="economica">Econômica</option>
+      </select>
+    </div>
+    <div id="lista-produtos" class="grade-produtos"></div>
+    <p id="nenhum-produto" class="estado-vazio oculto">Nenhuma cesta encontrada. Tente outra pesquisa.</p>
+  </main>
+  <div id="rodape"></div>
+</body>
+</html>
